@@ -34,7 +34,7 @@ def run():
         temp_location=f"gs://{BUCKET_NAME}/temp",
         region=REGION,
         job_name="dataflow-job-raw",
-        save_main_session=True,
+        save_main_session=True
     )
 
     with beam.Pipeline(options=pipeline_options) as p:
